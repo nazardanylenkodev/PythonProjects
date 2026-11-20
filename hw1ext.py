@@ -27,7 +27,7 @@ current_age = current_year - year_of_birth
 code_2 = int(((int(x) % int(y)*13))**0.5)
 secret_code = f"{int(code_1)}-{int(code_2)}-{int(code_3)}"
 
-print(" "*15, "="*15, " "*15, sep="\n")
+print(""*15, "="*15, ""*15, sep="\n")
 
 print("Current age:", current_age)
 print("Secret code:", secret_code)
