@@ -23,9 +23,9 @@ y = 132
 # ============================================
 
 current_age = current_year - year_of_birth
-code_2 = int((((int(code_1) % code_3)*13))**0.5)
+code_2 = int((((int(x) % int(y))*13))**0.5)
 secret_code = f"{code_1}-{code_2}-{code_3}"
 
 print("Current age:", current_age)
 print("Secret code:", secret_code)
-print("Hello", user_name, user_surname, "!", "Your age is", current_age, "Your secret code is :", secret_code)
+print("Hello", user_name, user_surname, "!", "Your age is", current_age, ",Your secret code is :", secret_code)
