@@ -34,14 +34,29 @@
 # print(text)
 # print("hello, world", "world", 123, 333, sep="***", end="===\n")
 
-
-product = "computer"
-price = 1500
-text = "This {prd} costs {prc}$."
-print(text.format(prd=product, prc=price))
-
 # x = 5
 # print(id(x))
 
 # x = x +5
 # print(id(x))
+
+
+# product = "computer"
+# price = 1500
+# text = "This {prd} costs {prc}$."
+# print(text.format(prd=product, prc=price))
+
+
+x = float(input("Enter a number:"))
+if x > 0:
+    print("x is positive")
+elif x < 0:
+    print("x is negative")
+elif x == 0:
+    print("x is zero")
+if isinstance(x, float):
+    print("x is a float number")
+elif isinstance(x, int):
+    print("x is an integer")
+else:
+   print("error")
