@@ -12,11 +12,14 @@
 # print(filed_list[0:4][1])
 
 
-courses = ["History","Math","Art","Programming","Math"]
+# courses = {"History","Math","Art","Programming"}
+# numbers = {1,2,3,4,5,6,7,8,9,12,24,-10}
+# print(numbers)
 
-for index, course in enumerate(courses):
-    if course == "Math":
-        print(index)
+
+# for index, course in enumerate(courses):
+#     if course == "Math":
+#         print(index)
 
 # courses_str = ", ".join(courses)
 # print(courses_str)
@@ -47,4 +50,10 @@ for index, course in enumerate(courses):
 
 # courses.reverse
 
+names = ["John", "Jane", "Alice", "Bob"]
 
+for name in names:
+    if len(name) > 4:
+        print("Long name:", name)
+    else:
+        print("Short name:", name)
