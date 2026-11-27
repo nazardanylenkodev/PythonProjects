@@ -57,3 +57,16 @@ for name in names:
         print("Long name:", name)
     else:
         print("Short name:", name)
+
+people = ["Sarah", "Bob", "Jack", "Samantha"]
+
+short = []
+long = []
+
+for person in people:
+    if len(person) > 4:
+        long.append(person)
+    else:
+        short.append(person)
+
+print("Short", short, "Long", long)
