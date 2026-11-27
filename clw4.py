@@ -66,14 +66,44 @@
     
 
 
-condition = True
-while condition:
-    id_code = input("enter est idcode")
-    if id_code.isdigit():
-        if len(id_code) == 11:
-            print(id_code, "OK")
-            condition = False
-        else:
-            print(id_code, "NOTOK")
-    else:
-        print("NOK")
+# condition = True
+# while condition:
+#     id_code = input("enter est idcode")
+#     if id_code.isdigit():
+#         if len(id_code) == 11:
+#             print(id_code, "OK")
+#             condition = False
+#         else:
+#             print(id_code, "NOTOK")
+#     else:
+#         print("NOK")
+
+
+# current_try = 1
+# max_tries = 5
+
+# while current_try <= max_tries:
+#     current_try += 1
+#     print(f"Try {current_try}")
+
+
+# for letter in "python":
+#     if letter == "h":
+#         continue
+#     if letter == "n":
+#         break
+#     print(letter)
+
+
+id_code = ""
+
+try:
+    int(id_code)
+    if len(id_code) != 11:
+        raise UserWarning
+except ValueError:
+    print("id code incorrect")
+except UserWarning:
+    print("it must be 11 digits")
+finally:
+    print("well done")
